@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3
+instance/
+.media
+/staticfiles
+/static/
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# VSCode
+.vscode/
+
+# Pipenv
+*.venv
+Pipfile.lock
+
+# PyCharm
+.idea/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+.hypothesis/
+
+# Build
+build/
+dist/
+*.egg-info/
