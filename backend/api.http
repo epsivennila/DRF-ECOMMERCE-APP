@@ -1,0 +1,26 @@
+GET  http://127.0.0.1:8000/products/ HTTP/1.1
+
+###
+POST http://127.0.0.1:8000/products/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4NjUyMjQ0LCJpYXQiOjE3Mzg2NTE5NDQsImp0aSI6IjBjNWEyMDM3MDUwYjRlN2JiNGViYmNmOWVmZDQzM2VhIiwidXNlcl9pZCI6NX0.EEL_XDvHIPbPMzHxMTkdil0QWsmaQ64jlkVhhVtJv3k
+
+{
+    "name" : "Television",
+    "description":"An amazing Television",
+    "price":300,
+    "stock":14
+}
+
+###
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"ven",
+    "password":"test"
+}
+
+###
+GET  http://127.0.0.1:8000/user-orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4NjUyNzE0LCJpYXQiOjE3Mzg2NTI0MTQsImp0aSI6ImIxNTdlYzExZTNiMzQ4MDI5NDA5MTdhOTFhMDFkYmM4IiwidXNlcl9pZCI6NX0.rOvFoCowzeLEpBagC_6CgbviwCwnvWy9HfiVOOPlt8Q
